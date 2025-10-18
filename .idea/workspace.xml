@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6cd8bfa-25cd-497d-a503-52308f892eb7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leiden001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leiden002dm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RGBhint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rgb4RndCol01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rndcol/BackgroundPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rndcol/GameWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rndcol/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rndcol/MenuWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rndcol/NameEntryWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rndcol/OptionsWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rndcol/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rndcol/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rndcol/OptionsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rndcol/OptionsWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

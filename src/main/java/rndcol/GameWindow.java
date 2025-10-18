@@ -34,10 +34,17 @@ public class GameWindow extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        Image bgImage = new ImageIcon("/home/nira/Documents/Shay/RndColJava/RndColJava/Leiden001.jpg").getImage();
+        // Choose background image based on dark mode setting
+        String basePath = "/home/nira/Documents/Shay/RndColJava/RndColJava/";
+        String imageFile = OptionsWindow.darkMode ? "Leiden002dm.jpg" : "Leiden001.jpg";
+
+        Image bgImage = new ImageIcon(basePath + imageFile).getImage();
         BackgroundPanel bgPanel = new BackgroundPanel(bgImage);
         setContentPane(bgPanel);
+
+// Optional fallback color (won’t be visible if image loads correctly)
         getContentPane().setBackground(Color.BLACK);
+
 
         setupUI(bgPanel);
         setupKeyBindings();
@@ -137,20 +144,23 @@ public class GameWindow extends JFrame {
             if (score >= OptionsWindow.pointsToWin) {
                 int choice = JOptionPane.showOptionDialog(
                         this,
-                        "You nailed it, " + MenuWindow.playerName + "!\nPlay again?",
+                        "You nailed it, " + MenuWindow.playerName + "!\nWhat would you like to do next?",
                         "Victory!",
-                        JOptionPane.YES_NO_OPTION,
+                        JOptionPane.DEFAULT_OPTION,
                         JOptionPane.INFORMATION_MESSAGE,
                         null,
-                        new String[]{"Play Again", "Exit"},
+                        new String[]{"Play Again", "Options", "Exit"},
                         "Play Again"
                 );
 
-                dispose();
-                if (choice == JOptionPane.YES_OPTION) {
-                    new GameWindow();
+                dispose(); // close current game window
+
+                if (choice == 0) {
+                    new GameWindow(); // Play Again
+                } else if (choice == 1) {
+                    new OptionsWindow(); // Open Options
                 } else {
-                    System.exit(0);
+                    System.exit(0); // Exit to main menu
                 }
             } else {
                 generateNewTarget();

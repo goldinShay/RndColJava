@@ -25,7 +25,7 @@ public class OptionsWindow extends JFrame {
         JComboBox<String> timerDropdown = new JComboBox<>(timerOptions);
         timerDropdown.setSelectedIndex(timerSetting);
 
-        String[] pointOptions = {"5 Points to win", "10 Points to win", "15 Points to win", "20 Points to win "};
+        String[] pointOptions = {"5", "10", "15", "20"};
         JComboBox<String> pointsDropdown = new JComboBox<>(pointOptions);
         pointsDropdown.setSelectedItem(String.valueOf(pointsToWin));
 
