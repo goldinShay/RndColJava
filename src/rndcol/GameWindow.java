@@ -27,9 +27,11 @@ public class GameWindow extends JFrame {
 
     private Timer hideTimer;
     private Timer validationTimer;
+    private Timer countdownTimer;
 
     public GameWindow() {
         setTitle("RandCol Game");
+        setIconImage(new ImageIcon("RGBhint.png").getImage());
         setSize(600, 600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -142,6 +144,9 @@ public class GameWindow extends JFrame {
             score++;
             scoreLabel.setText("Score: " + score);
             if (score >= OptionsWindow.pointsToWin) {
+                if (countdownTimer != null && countdownTimer.isRunning()) {
+                    countdownTimer.stop();
+                }
                 int choice = JOptionPane.showOptionDialog(
                         this,
                         "You nailed it, " + MenuWindow.playerName + "!\nWhat would you like to do next?",
@@ -163,6 +168,9 @@ public class GameWindow extends JFrame {
                     System.exit(0); // Exit to main menu
                 }
             } else {
+                if (countdownTimer != null && countdownTimer.isRunning()) {
+                    countdownTimer.stop();
+                }
                 generateNewTarget();
             }
         } else if (rgb[0] || rgb[1] || rgb[2]) {
@@ -180,13 +188,19 @@ public class GameWindow extends JFrame {
         targetColorPanel.setBackground(targetColor);
         resetUserColor();
 
-        if (!OptionsWindow.keepColorVisible) {
-            if (hideTimer != null && hideTimer.isRunning()) {
-                hideTimer.stop();
+        if (OptionsWindow.timeChallenge && OptionsWindow.timeLimitSeconds > 0) {
+            if (countdownTimer != null && countdownTimer.isRunning()) {
+                countdownTimer.stop();
             }
-            hideTimer = new Timer(500, e -> targetColorPanel.setBackground(Color.BLACK));
-            hideTimer.setRepeats(false);
-            hideTimer.start();
+
+            countdownTimer = new Timer(OptionsWindow.timeLimitSeconds * 1000, e -> {
+                score = 0;
+                scoreLabel.setText("Score: 0");
+                JOptionPane.showMessageDialog(this, "⏰ Time's up!");
+                generateNewTarget();
+            });
+            countdownTimer.setRepeats(false);
+            countdownTimer.start();
         }
     }
 

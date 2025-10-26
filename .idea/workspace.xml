@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6cd8bfa-25cd-497d-a503-52308f892eb7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/RandColGameBU.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rndcol/BackgroundPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rndcol/GameWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rndcol/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rndcol/MenuWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rndcol/NameEntryWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rndcol/OptionsWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rndcol/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rndcol/GameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rndcol/OptionsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rndcol/OptionsWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rndcol/BackgroundPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rndcol/GameWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rndcol/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rndcol/MenuWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rndcol/NameEntryWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rndcol/OptionsWindow.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +61,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_directory_selection": "/home/nira/Documents/Shay/RndColJava/RndColJava/src/main/java/rndcol",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">

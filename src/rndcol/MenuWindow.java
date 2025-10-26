@@ -8,6 +8,7 @@ public class MenuWindow extends JFrame {
 
     public MenuWindow() {
         setTitle("RandCol Main Menu");
+        setIconImage(new ImageIcon("RGBhint.png").getImage());
         setSize(300, 200);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
